@@ -233,4 +233,4 @@ ViewGames will display a page with up to 40 games.
 
 ## Submission
 
-- Pull request utilizing this template: [PR Guidelines](https://github.com/SEI-R-9-19/template_pull_request)
+- Pull request utilizing this template: [PR Guidelines](https://github.com/SEI-R-1-9/template_pull_request)
