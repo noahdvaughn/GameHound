@@ -93,10 +93,10 @@ import Header from './components/Header'
     <Header />
     <main>
       <Routes>
-        <Route path="" element={} />
-        <Route path="" element={} />
-        <Route path="" element={} />
-        <Route path="" element={} />
+        <Route to="" element={} />
+        <Route to="" element={} />
+        <Route to="" element={} />
+        <Route to="" element={} />
       </Routes>
     </main>
   </div>
