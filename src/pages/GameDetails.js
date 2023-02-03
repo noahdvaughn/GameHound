@@ -1,28 +1,21 @@
 import { useEffect, useState } from 'react'
 
 const GameDetails = (props) => {
-  const [selectedGame, setSelectedGame] = useState(null)
-  const [gameDetails, setGameDetails] = useState(null)
+  const [gameDetails, setGameDetails] = useState({})
 
-  useEffect(() => {
-    
-  }, [gameId])
+  // useEffect(() => {
+
+  // }, [gameId])
 
   return (
     <div className="game-content">
       <section className="image-container">
-        <div>
-
-        </div>
+        <div></div>
       </section>
       <section className="details">
-        <div className="flex-row space">
-
-        </div>
+        <div className="flex-row space"></div>
         <div>
-          <h3>
-
-          </h3>
+          <h3></h3>
         </div>
       </section>
     </div>

@@ -5,9 +5,6 @@ import Home from './pages/Home'
 import About from './pages/About'
 import GameDetails from './pages/GameDetails'
 import ViewGames from './pages/ViewGames'
-import Search from './components/Search'
-
-const API_KEY = process.env.REACT_APP_RAWG_KEY
 
 const App = () => {
   return (
@@ -15,10 +12,11 @@ const App = () => {
       <Header />
       <main>
         <Routes>
-          <Route path="/" element={Home} />
-          <Route path="/About" element={About} />
-          <Route path="/GameDetails" element={GameDetails} />
-          <Route path="/ViewGames" element={ViewGames} />
+          <Route path="/" element={<Home />} />
+          <Route path="/About" element={<About />} />
+          <Route path="/GameDetails" element={<GameDetails />} />
+          <Route path="/ViewGames" element={<ViewGames />} />
+          <Route path="/GameDetails/:id" element={<GameDetails />} />
         </Routes>
       </main>
     </div>

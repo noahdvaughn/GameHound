@@ -1,7 +1,7 @@
-const Search = ({onSubmit, onChange, value}) => {
+const Search = ({getSearchResults, onChange, value}) => {
 
   return (
-    <form>
+    <form onSubmit={getSearchResults}>
       <input
   type="text"
   name="search"
@@ -10,8 +10,8 @@ const Search = ({onSubmit, onChange, value}) => {
   onChange={onChange}
 >
 </input>
-<button type='submit' onSubmit={onSubmit}></button>
-    </form>
+<button type='submit'></button>
+    </form >
   )
 }
 
