@@ -1,11 +1,14 @@
 import { useEffect, useState } from 'react'
+import { useParams, Link } from 'react-router-dom'
 
 const GameDetails = (props) => {
   const [gameDetails, setGameDetails] = useState({})
 
-  // useEffect(() => {
+  let { gameId } = useParams
 
-  // }, [gameId])
+  useEffect(() => {
+    let selectedGame = ''
+  }, [gameId])
 
   return (
     <div className="game-content">

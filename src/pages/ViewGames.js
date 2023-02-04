@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { useParams, Link } from 'react-router-dom'
 
 //this is used to display games of a similar genre
 

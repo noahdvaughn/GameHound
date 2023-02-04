@@ -1,7 +1,11 @@
-const GameCard = ({onClick, image, name, rating}) => {
+import { Link } from 'react-router-dom'
+
+
+const GameCard = ({onClick, image, name, rating, id}) => {
   
 
   return (
+    <Link to={`/GameDetails/${id}`}>
     <div className="card game-card" onClick={onClick}>
       <div className="img-wrapper" >
         <img src={image} alt='Game Image'/>
@@ -11,6 +15,7 @@ const GameCard = ({onClick, image, name, rating}) => {
         <p>{rating}</p>
       </div>
     </div>
+    </Link>
   )
 }
 

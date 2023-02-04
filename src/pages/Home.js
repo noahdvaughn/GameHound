@@ -61,6 +61,7 @@ const Home = () => {
             name={genre.name}
             image={genre.image_background}
             gamesCount={genre.games_count}
+            id={genre.id}
           />
         ))}
       </section>

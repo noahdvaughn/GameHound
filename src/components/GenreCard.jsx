@@ -1,7 +1,10 @@
-const GenreCard = ({image, onClick, name, gamesCount }) => {
+import { Link } from 'react-router-dom'
+
+const GenreCard = ({image, onClick, name, gamesCount, id }) => {
 
   return (
-    <div className="card" onClick={onClick}>
+    <Link to={`/ViewGames/${id}`}>
+      <div className="card" onClick={onClick}>
       <div className="img-wrapper"  alt="Game Image">
       <img src={image} alt='Game Poster'/>
       </div>
@@ -10,6 +13,8 @@ const GenreCard = ({image, onClick, name, gamesCount }) => {
         <p>{gamesCount}</p>
       </div>
     </div>
+    
+    </Link>
   )
 }
 
