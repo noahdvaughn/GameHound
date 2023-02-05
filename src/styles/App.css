@@ -18,6 +18,18 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.aboutDiv{
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #212121;
+}
+.aboutText{
+}
+.socialLinks{
+  text-align: center;
+  margin-left: 20vw;
+
+}
 
 a {
   color: #ba3fc3;
@@ -27,9 +39,6 @@ a {
 .woof{
   font-family: "Press Start 2P";
   color: #38e807;
-}
-.invisible{
-  display: none;
 }
 
 header {
