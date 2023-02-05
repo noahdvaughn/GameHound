@@ -23,7 +23,7 @@ const GameDetails = (props) => {
 
   return (
     <div className="game-content">
-      <h1 style={{ textAlign: 'center' }}>{gameDetails.name}</h1>
+      <h1 className="gameTitle">{gameDetails.name}</h1>
       <section className="image-container">
         <div>
           <img src={gameDetails.background_image} />
