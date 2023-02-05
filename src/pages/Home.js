@@ -35,14 +35,13 @@ const Home = () => {
     getGenres()
   }, [])
 
-  console.log(searchResults)
-
   let display = searched ? (
     <div className="search">
       <h2>Search Results</h2>
       <section className="search-results container-grid">
         {searchResults.map((result) => (
           <GameCard
+            key={result.id}
             id={result.id}
             image={result.background_image}
             name={result.name}

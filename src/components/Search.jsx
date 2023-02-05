@@ -10,7 +10,7 @@ const Search = ({getSearchResults, onChange, value}) => {
   onChange={onChange}
 >
 </input>
-<button type='submit'></button>
+<button type='submit'>Go</button>
     </form >
   )
 }
