@@ -52,7 +52,7 @@ const Home = () => {
     </div>
   ) : (
     <div className="genres">
-      <h2>Genres</h2>
+      <h2>Top Genres</h2>
       <section className="container-grid">
         {genres.map((genre) => (
           <GenreCard
